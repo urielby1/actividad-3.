@@ -1,6 +1,8 @@
 package com.example.actividad3;
 
 import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+
+
         });
+                Toast.makeText(getApplicationContext(),"Bienvenido a tecmilenio ", Toast.LENGTH_SHORT).show();
+                final TextView message = (TextView) findViewById(R.id.message);
+                Button button = (button) findViewByid(R.id.texto_boton1);
+                button.set0nClickListener(-v message.setText("otro texto"));
     }
 }
